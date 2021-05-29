@@ -1,0 +1,121 @@
+.kontener {
+    width: fit-content;
+    margin: auto;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 10px 8px #888888;
+    background-color: white;
+}
+
+.header {
+    text-align: justify;
+}
+
+.header::after {
+    content: '';
+    width: 100%;
+    display: inline-block;
+}
+
+.atas {
+    display: inline-block;
+}
+
+thead {
+    background-color: yellow;
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a {
+    display: inline-block;
+    border-radius: 5px;
+    width: auto;
+    height: 20px;
+    background: steelblue;
+    padding: 5px;
+    text-align: center;
+    color: white;
+    font-style: normal;
+    line-height: 20px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a:hover {
+    background-color: blue;
+}
+
+tbody tr:hover {
+    background-color: lightgray;
+}
+
+body {
+    background: #f2f2f2;
+    font-family: 'Open Sans', sans-serif;
+    font-size: smaller;
+}
+
+.search {
+    display: inline-block;
+    border: 2px solid steelblue;
+    border-right: none;
+    padding: 5px;
+    height: 30px;
+    border-radius: 5px 0 0 5px;
+}
+
+.searchlabel {
+    display: inline-block;
+    width: 40px;
+    height: 26px;
+    margin-left: -6px;
+    border: 2px solid steelblue;
+    background: steelblue;
+    text-align: center;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+[data-title]:hover:after {
+    opacity: 1;
+    transition: all 0.1s ease 0.5s;
+    visibility: visible;
+}
+
+[data-title]:after {
+    content: attr(data-title);
+    position: absolute;
+    bottom: -1.6em;
+    left: 100%;
+    padding: 4px 4px 4px 8px;
+    color: #222;
+    white-space: nowrap;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -moz-box-shadow: 0px 0px 4px #222;
+    -webkit-box-shadow: 0px 0px 4px #222;
+    box-shadow: 0px 0px 4px #222;
+    background-image: -moz-linear-gradient(top, #f8f8f8, #cccccc);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f8f8f8), color-stop(1, #cccccc));
+    background-image: -webkit-linear-gradient(top, #f8f8f8, #cccccc);
+    background-image: -moz-linear-gradient(top, #f8f8f8, #cccccc);
+    background-image: -ms-linear-gradient(top, #f8f8f8, #cccccc);
+    background-image: -o-linear-gradient(top, #f8f8f8, #cccccc);
+    opacity: 0;
+    z-index: 99999;
+    visibility: hidden;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+}
+
+[data-title] {
+    position: relative;
+}
